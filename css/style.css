@@ -1,0 +1,211 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    
+    header {
+        text-align: center;
+    }
+}
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+
+/* ###########For Hypotenuse ######################### */
+
+.container {
+    width:80%;
+    margin: 0 auto;
+
+    
+}
+.container h1 {
+    text-align: center;
+    /*  */
+}
+
+
+label {
+    display: block;
+    font-size: 1.125rem;
+    margin-bottom: .77rem;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    background: #EDEDED;
+    border: 1px solid #C7C7C7;
+    font-size: 1rem;
+    padding: .75rem;
+    margin-bottom: 2.5em;
+    border-color: palevioletred;
+}
+input[type="text"]:focus {
+    border: 3px solid black;
+    
+}
+
+button {
+    font-family: "Comfortaa", sans-serif;
+    padding: 1em 1.5em;
+    margin-top: 2em;
+    border-radius: 5px;
+    border: none;
+    background: lime;
+    color: black;
+    cursor: pointer;
+    transition: background 0.5s;
+    
+}
+
+button:hover, button:focus {
+    background: rgb(168, 0, 0);
+}
+
+ .container button {
+    margin: 0 auto;
+}
+
+
+.question {
+    margin: 2rem auto;
+    background: rgb(241 241 241 / 38%);
+    font-size:larger;
+    padding: 1rem 0;
+    border-radius: 0.7rem;
+    box-shadow: 9.91px 9.91px 15px #eff2f4, -9.91px -9.91px 15px #fafafa;
+  }
+  
+  .quiz {
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .point {
+      text-align: center;
+      margin-top: 52px;
+  }
+
+  .area-output {
+      text-align: center;
+      font-weight: bolder;
+      color: red;
+      font-size: 25px;
+  }
+
+
+  .quiz-form{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.input-quiz, .inputt-quiz {
+    display: inline;
+    float: center;
+    width: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .input-quiz, .inputt-quiz {
+        display: inline;
+        float: center;
+        width: auto;
+      }
+    }
+  

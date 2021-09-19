@@ -11,9 +11,16 @@ function calulateSum(angle1,angle2,angle3) {
 function tringle() {
     const sumofAngles = calulateSum(Number.parseInt(input[0].value,10),
     Number.parseInt(input[1].value,10), Number.parseInt(input[2].value,10))
-    if (sumofAngles === 180) {
+
+    if(Number(input[0].value <=0 || Number(input[1].value <=0))) {
+        output.textContent = "Enter values greater than 0"
+    }
+
+    else if (sumofAngles === 180) {
         output.textContent = "Yay, the angles form a triangle!"
-    } else {
+    } 
+    
+    else {
         output.textContent = "Oh Oh! The angle doesn't form a triangle"
     }
 

@@ -11,8 +11,19 @@ function calulateSquare(a,b) {
 function calculateHypotenuse() {
     const sumofSquare = calulateSquare(Number.parseInt(input[0].value,10),
     Number.parseInt(input[1].value,10))
-    const answer = Math.round(Math.sqrt(sumofSquare))
-    output.textContent = `The length of hypotenuse is ${answer} unit.`
+
+    if(Number(input[0].value <=0 || Number(input[1].value <=0))) {
+        output.textContent = "Enter values greater than 0"
+    }
+    
+    
+    else if(sumofSquare >0) {
+        const answer = Math.round(Math.sqrt(sumofSquare))
+        output.textContent = `The length of hypotenuse is ${answer} unit.`
+
+    } else {
+        output.textContent = "Enter values greater than 0"
+    }
 }
 
 button.addEventListener('click', calculateHypotenuse)
